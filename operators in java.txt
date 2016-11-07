@@ -12,4 +12,12 @@ Operator 	Description 	Example
 / (Division) 	Divides left-hand operand by right-hand operand. 	B / A will give 2
 % (Modulus) 	Divides left-hand operand by right-hand operand and returns remainder. 	B % A will give 0
 ++ (Increment) 	Increases the value of operand by 1. 	B++ gives 21
+
+
+
+
+
+
+
+I HAVE DONE SOME CHANGE LET SEE
 -- (Decrement) 	Decreases the value of operand by 1. 	B-- gives 19
