@@ -1,0 +1,66 @@
+homework for demo.nopcommerce
+
+
+Feature: Email to friend with selected product information and personal message(optional).
+
+Scenario:User has valid email address to send email.
+
+Given:user on Email a Friend page.
+And: user enters valid email adress in Friend's email field
+And :user has valid registered email address in Your email address field
+And:user types any message in Personal message field(Optional user can leave it blank)
+And:user clicks on SEND EMAIL button
+Then:user should be able to send email and see message "Your message has benn sent". 
+==========================================================================
+
+Feature: Email to friend with selected product information and personal message(optional).
+
+Scenario:User has invalid email address.
+
+Given:user on Email a Friend page
+And:user enters invalid email address in Friend's email field
+Then:user should see a error message"Wrong email" 
+And :user enter invalid email address in Your email address
+Then:user should see a error message "Wrong email"
+And :user enters message in Personal message field(Optional user can leave it blank)
+And:user click on SEND EMAIL button
+Then:user should not be able to send message.
+=================================================================
+
+Feature:Email a friend with selected product information and personal message(optional).
+
+Scenario: User sending mail by unregistered email address.
+
+Given:user on Email a friend page
+And :user enters valid address in Friend's email field
+And:user enters unregistered but valid email address in Your email address field
+And:user enters message in Personal message field(Optional user can leave it blank)
+And:user clicks on SEND EMAIL button
+Then:user should get error message "Only registered user can use email a friend feature".
+
+
+
+
+
+
+
+
+Feature:Email to friend with selected product information and personal message(optional).
+
+Scenario:User trying to send with no email address.
+
+Given:user on Email a Friend page
+And:user leaves the Friend's email field blank (empty)
+Then:user should see error message "Enter friend's email"
+And :user leaves Your email address field blank (empty)
+Then:user should see error message"Enter your email"
+And:user enters message in Personal message field(Optional user can leave it blank)
+And:user clicks on SEND EMAIL button
+Then:user should not be able to send email
+
+
+
+ 
+
+
+
